@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{%-5level }[%style{%t}{blue}] %style{%c{1}}{white}: %msg%n%throwable"/>
+        </Console>
+    </Appenders>
+<Loggers>
+    <Logger name="com.bu.plaid" level="trace"/>
+    <Root>
+        <AppenderRef ref="Console"/>
+    </Root>
+</Loggers>
+</Configuration>

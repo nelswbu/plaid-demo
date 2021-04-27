@@ -1,0 +1,14 @@
+plaid_products: transactions
+plaid_country_codes: US
+plaid_redirect_uri: http://localhost:3000
+plaid_env: sandbox
+
+#First Platypus Bank
+plaid_institution_id: ins_109508
+
+spring:
+  application:
+    name: Plaid-Demo
+  jackson:
+    serialization:
+      indent-output: true
